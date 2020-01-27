@@ -6,7 +6,7 @@
 /*   By: rsandova <rsandova@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 18:51:54 by rsandova          #+#    #+#             */
-/*   Updated: 2020/01/22 19:13:19 by rsandova         ###   ########.fr       */
+/*   Updated: 2020/01/27 16:37:33 by rsandova         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
+	if (!s)
+		return ;
 	ft_putstr_fd(s, fd);
 	ft_putstr_fd("\n", fd);
 }

@@ -6,7 +6,7 @@
 /*   By: rsandova <rsandova@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 15:04:00 by rsandova          #+#    #+#             */
-/*   Updated: 2020/01/25 18:34:16 by rsandova         ###   ########.fr       */
+/*   Updated: 2020/01/27 15:52:30 by rsandova         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_calloc(size_t count, size_t size)
 	char	*resp;
 	size_t	i;
 
-	resp = malloc(count * size);
+	resp = (char *)malloc(count * size);
 	if (!resp)
 		return (NULL);
 	i = 0;

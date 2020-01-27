@@ -6,7 +6,7 @@
 /*   By: rsandova <rsandova@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 18:49:42 by rsandova          #+#    #+#             */
-/*   Updated: 2020/01/22 18:50:46 by rsandova         ###   ########.fr       */
+/*   Updated: 2020/01/27 16:37:39 by rsandova         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	int i;
 
+	if (!s)
+		return ;
 	i = 0;
 	while (s[i])
 	{

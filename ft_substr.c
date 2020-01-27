@@ -6,7 +6,7 @@
 /*   By: rsandova <rsandova@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/01/22 15:17:34 by rsandova          #+#    #+#             */
-/*   Updated: 2020/01/25 19:31:28 by rsandova         ###   ########.fr       */
+/*   Updated: 2020/01/27 16:34:35 by rsandova         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (!substr || !s)
 		return (NULL);
 	i = 0;
+	if (ft_strlen(s) < start)
+		return (ft_strdup(""));
+	if (ft_strlen(s + start) < len)
+		len = ft_strlen(s + start);
 	while (i < len)
 	{
 		substr[i] = s[i + start];
